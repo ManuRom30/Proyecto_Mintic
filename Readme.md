@@ -11,7 +11,7 @@ Se realizará una inrfaestructura como codigo para AWS usando los siguientes rec
 
 ````````
 provider "aws" {
-  region = "us-east-*"
+  region = "us-east-1"
   access_key = "**************"
   secret_key = "************"
 } 
