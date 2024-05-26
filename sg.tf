@@ -1,7 +1,7 @@
-resource "aws_security_group" "sg_ejercicio" {
+resource "aws_security_group" "sg_proyecto" {
     name = "sg_default"
     description = "Allow traffic HTTP SSH"
-    vpc_id = aws_vpc.vpc_ejercicio.id
+    vpc_id = aws_vpc.vpc_ec2_wordpress.id
 
     tags = {
       Name = "Allow all"
