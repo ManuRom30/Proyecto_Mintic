@@ -1,4 +1,4 @@
 account.tf
-*.tfstate
+terraform.tfstate
 .terraform.lock.hcl
 .terraform/
