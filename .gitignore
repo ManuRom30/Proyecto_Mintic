@@ -1,5 +1,6 @@
 account.tf
 terraform.tfstate
+terraform.tfstate.*
 .terraform.lock.hcl
 .terraform/
 terraform-provider-aws_v5.51.1_x5

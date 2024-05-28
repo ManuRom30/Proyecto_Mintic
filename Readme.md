@@ -16,4 +16,16 @@ provider "aws" {
   secret_key = "************"
 } 
 ````````
-listo
+Ignorar esteos archivos 
+
+````````
+account.tf
+terraform.tfstate
+terraform.tfstate.*
+.terraform.lock.hcl
+.terraform/
+terraform-provider-aws_v5.51.1_x5
+LICENCE.txt
+.terraform/providers/registry.terraform.io/hashicorp/aws/5.51.1/darwin_arm64/terraform-provider-aws_v5.51.1_x5
+
+````````
