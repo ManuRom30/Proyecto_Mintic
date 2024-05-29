@@ -1,12 +1,17 @@
 # --Base de datos--
 
 # 1. Creamos el cluster
-resource "aws_rds_cluster" "rds_wordpress" {
-  cluster_identifier      = "mysql-cluster-rds"
-  engine                  = "aurora-mysql"
-  engine_version          = "5.7.mysql_aurora.2.11.5"
-  availability_zones      = ["us-east-1a"]
-  database_name           = "mydb"
-  master_username         = "root_user"
-  master_password         = "rdsMysql"
+resource "aws_db_instance" "rds_wordpress" {
+  allocated_storage = 20
+  engine = "mysql"
+  engine_version = "5.7.44"
+  instance_class = "db.t3.micro"
+  db_name = "rdswordpress" 
+  username = "root_user"
+  password = "rdsMysql"
+  multi_az = true
+  identifier = "db_proyecto"
+  db_subnet_group_name = aws_db_subnet_group.my_db_subnet_group.name
+  vpc_security_group_ids = [aws_security_group.sg_rds.id]
+
 }
