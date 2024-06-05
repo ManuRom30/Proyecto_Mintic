@@ -31,3 +31,6 @@ LICENCE.txt
 .terraform/providers/registry.terraform.io/hashicorp/aws/5.51.1/darwin_arm64/terraform-provider-aws_v5.51.1_x5
 
 ````````
+### Diagrama de Infraestructura
+
+<img width="704" alt="image" src="https://github.com/ManuRom30/Proyecto_Mintic/assets/138976735/4612cc83-3ff5-4aa3-914d-8995119d8c54">
