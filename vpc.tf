@@ -19,6 +19,17 @@ resource "aws_subnet" "subnet_vpc_proyecto" {
   
 }
 
+resource "aws_subnet" "subnet_vpc_rds" {
+    vpc_id = aws_vpc.vpc_ec2_wordpress.id
+    cidr_block = "172.16.20.0/24"
+    availability_zone = "us-east-1b"
+
+    tags = {
+      Name = "subnet_vpc_rds"
+    }
+  
+}
+
 resource "aws_internet_gateway" "int_gw_vpc_proy" {
     vpc_id = aws_vpc.vpc_ec2_wordpress.id
 }
